@@ -1,0 +1,97 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉菜单</title>
+    <style type="text/css">
+      * {
+	margin: 0;
+	padding: 0;
+        }
+
+        #nav {
+            height: 400px;
+          
+          
+        }
+        ul {
+            list-style: none;
+            line-height: 40px;
+        }
+        
+      
+        a {
+            text-decoration: none;
+            text-align: center;
+            padding: 0 20px;
+            color:rgba(204, 204, 204, 0.958);
+            display: block;
+           
+        }
+    
+        ul li {
+            float: left;
+        } 
+        ul li ul li {
+            float: none;
+            display: none;
+        }
+
+        ul li:hover li {
+            display: block
+        }
+   
+        ul li ul li a:hover {
+            background-color:lightcoral;
+        }
+        .s{
+            background-color: white;
+        }
+        #search{
+            background-position: 2%;
+            background-size: 30px;
+            background-image: url(/峰/img/查找.png);
+            background-repeat:no-repeat;
+        }
+        .center{
+            text-align: center;
+        }
+        input::-ms-input-placeholder{
+            text-align: center;
+        }
+        input::-webkit-input-placeholder{
+            text-align: center;
+        }
+    </style>
+</head>
+<body background="../峰/img/bg1.jpg">
+    <div id="nav">
+        <div class="tips">
+            <div class="img">
+                <img src="../峰/img/微软.png" alt="" style="float: left;margin-bottom: 50px;">
+            </div>
+            <ul>
+                <li class="a" style="margin-top: 70px;"><a href="#">picture</a></li>
+                <li class="a" style="margin-top: 70px;"><a href="#">video</a></li>
+                <li class="a" style="margin-top: 70px;"><a href="#">more</a>
+                  <ul>
+                    <li class="s"><a href="#">map</a></li>
+                    <li class="s"><a href="#">news</a></li>
+                  </ul>
+                </li>
+         
+        </div>
+      
+    </div>
+    <div class="search">
+        <img src="../峰/" alt="">
+        <input type="text" id="search" style="display:block;width: 500px;height:50px;margin: 0 auto ;
+        border-radius: 18px;">
+    </div>
+    <div class="search1">
+        <input type="text" name="" id="" style="display:block;width: 100px;height:30px;margin: 15px auto" placeholder="search" placeholder-class="center">
+    </div>
+</body>
+</html>
